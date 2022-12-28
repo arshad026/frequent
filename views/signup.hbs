@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>USER REGISTER</title>
+
+    <style>
+        div {
+            padding: 20px;
+            font-family: 'Helvetica', serif;
+            box-shadow: 5px 5px 7px 5px rgb(71, 23, 42);
+            margin-top: 3%;
+            margin-left: 35%;
+            height: 450px;
+            width: 300px;
+            background-color: rgb(255, 184, 213);
+            border: 3px solid rgb(151, 5, 5);
+            border-radius: 10px;
+            text-align: center;
+
+        }
+
+        h1 {
+            font-size: 25px;
+            text-align: center;
+        }
+
+        input {
+            width: 60%;
+            height: 5px;
+            font-size: 15px;
+            padding: 12px 20px;
+            margin: 8px 0;
+            border: none;
+            border-bottom: 2px solid #686565;
+            background-color: rgb(255, 255, 255);
+            border-radius: 5px;
+        }
+        .button{
+            font-family: 'Helvetica', serif;
+            background-color: #767474;
+            font-size: 16px;
+            text-align: center;
+            height: 5px;
+            border: none;
+            color: white;
+            padding: 16px 32px;
+            margin: 15px 2px;
+            border-radius: 10px;
+            font: 100px;
+        }
+        h3{
+            font-size: 16px;
+            text-align: center;
+        }
+        h5{
+            font-size: 16px;
+            margin-top: auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <div>
+    <h1>Registration Form</h1>
+
+    <form action="/signup" method="post">
+        <input type="text" name="name" placeholder="FirstName" required/>
+        <br>
+        <input type="text" name="name" placeholder="LastName" required/>
+        <br>
+        <input type="text" name="email" placeholder="Email" required />
+        <br>
+        <input type="text" name="phone" placeholder="Mobile" required />
+        <br>
+        <input type="text" name="password" placeholder="Password" required />
+        <br>
+        <button type="submit" class="button" value="Submit"><h5>Sign Up</h5></button>
+        <i class="bi bi-eye"></i>
+    </form>
+    <h3>Already have an account ?</h3>
+    <a href="/login">login here</a>
+    </div>
+
+</body>
+
+</html>
